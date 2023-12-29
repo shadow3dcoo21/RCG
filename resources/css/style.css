@@ -1,0 +1,1267 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;900;200;300;400;500&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;900&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@350&display=swap');
+ body::-webkit-scrollbar {
+    width: 5px; /* Ajusta el ancho según tus preferencias */
+    position: absolute;
+    overflow-y:scroll;
+    
+}
+
+/* Fondo de la barra de desplazamiento */
+body::-webkit-scrollbar-track {
+    background: rgb(116, 116, 116);
+    width: 5px; /* Ajusta el color según tus preferencias */
+}
+
+/* Color de la perilla (scroll thumb) */
+body::-webkit-scrollbar-thumb {
+    background: #282145; /* Ajusta el color según tus preferencias */
+    border-radius: 15px;
+    width: 25px;
+    position: absolute;
+}
+
+/* Cambia el color cuando se pasa el ratón sobre la barra de desplazamiento */
+body::-webkit-scrollbar-thumb:hover {
+    background: #35274e; /* Ajusta el color según tus preferencias */
+}
+ /*    <nav_menu.jsp>     */
+
+     .nav_all{
+        transition: .5s ease all;
+        position: fixed;
+         background-color: rgba(62, 62, 62, 0.158);
+        z-index: 9999999;
+         height: 80px;
+         width: 100%;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         flex-wrap: wrap;
+         border-bottom: 1px solid rgb(255, 255, 255);
+     }
+
+
+
+     .nav_all.scrolled {
+        background-color: #ffffff; /* Color de fondo al hacer scroll */
+        transition: .5s ease all;
+    }
+    
+
+
+     .container_int{
+        background-color: transparent;
+        width: 95%;
+        display: flex;
+         flex-direction: row;
+         justify-content: center;
+         flex-wrap: wrap;
+     }
+ 
+ 
+         /*   div 1 : logo_nav     */
+             .logo_nav{
+                 background-color: transparent;
+                 width: 15%;
+                 display: flex;
+                 align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+                 justify-content: center;
+             }
+             .logo_nav_int{
+                 background-color: transparent;
+                 display: flex;
+                 align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+                 justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
+                  
+             }
+             .logo_nav_int>img{
+                 width: 250px;
+                 height: 50px;
+                 
+             }
+         /*  /div 1 : logo_nav     */
+ 
+ 
+         /*   div 2 : nav_int     */
+             .nav_int{
+                 background-color: transparent;
+                 width: 72%;
+                 align-items: center;
+             }
+             ._fixed{
+                 
+                 background-color: transparent;
+                 
+                 height: 80px;
+                 z-index: 9999;
+                 display: flex;
+                 flex-direction: row;
+                 justify-content: flex-end;
+                 align-items: center;
+                 gap: 7px;
+                 
+             }
+             
+             .present {
+                 background-color: transparent;
+                 padding: 5px 10px 5px 10px; 
+                 font-family:  "Noto Sans JP",sans-serif;
+                 
+                 
+             }
+             .nav-text{
+                 color: #ffffff;
+                 text-decoration: none;
+                 
+                 
+                 font-family: 'Noto Sans JP', sans-serif;
+                 font-size: 13px;
+                 
+             }
+             .nav_all.scrolled .nav-text {
+                color: #2b2255; /* Color de fondo al hacer scroll */
+                transition: .8s ease all;
+                font-family: 'Noto Sans JP', sans-serif;
+                 font-size: 13px;
+                 font-weight: 600;
+            }
+        
+         /*  /div 2 : nav_int     */
+ 
+ 
+         /*   div 3 : login_nav    */
+             .login_nav{
+                 background-color: transparent;
+                 width: 19%;
+                 height: 80px;
+                 display: flex;
+                 align-items: center;
+                 flex-direction: row;
+                 justify-content: flex-end;
+                 flex-wrap: wrap;
+             }
+             .btn-secondary{
+                 font-family:  "Noto Sans JP",sans-serif;
+                 font-size: 14px;
+                 font-weight: 550;
+             }
+         /*  /div 3 : login_nav    */
+ 
+ 
+ /*    </nav_menu.jsp>     */
+ 
+ 
+ 
+ /* index.jsp*/
+ 
+ .nav_index{
+     background-color: rgb(255, 145, 0);
+     height: 200px;
+ }
+ 
+ 
+ 
+ .carousel-item img {
+    width: 100%;
+    height: auto;
+    min-height: 300px; /* Ajusta según tus necesidades */
+ }
+ 
+ .carousel {
+    overflow: hidden;
+ }
+ .color_boton_nombre{
+    border-radius: 5px;
+    background-color: #fec50a;
+    color: rgb(43, 43, 134);
+    font-weight: bold;
+    font-size: 13.5px;
+    padding: 6px 25px 6px 25px;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /********************************************************************************************************************************************************************/
+ /********************************************                                 3.- SLIDER-                                    *******************************/
+ /********************************************************************************************************************************************************************/
+ 
+ .slider-fondoentero{
+     background-color: rgb(70, 53, 53);
+     width: 100%;
+     min-height:100vh !important;
+ height: 100vh !important;
+ overflow: hidden;
+ 
+
+ }
+ .slider-fondoentero1{
+    
+    background-color: transparent;
+    margin-top: -5%;
+     width: 100%;
+     min-height:120vh !important;
+ height: 120vh !important;
+ 
+ }
+ .fondo-imagen-slider-encima{
+     width:100%;
+     height: 100%;
+     background-color: rgba(251, 10, 10, 0.3);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     z-index: 9;
+ }
+ .tamaño-tarjeta{
+     width: 100%;
+     min-height:100vh !important;
+ height: 100vh !important;
+ position: absolute;
+
+ background: linear-gradient(to right, rgba(0, 0, 0, 0.734),rgba(0, 0, 0, 0.734),rgba(25, 24, 24, 0.186), rgba(0, 0, 0, 0)); /* Ajusta los valores de color y opacidad según tus necesidades */
+            border: none;
+ z-index: 9999;
+ }
+ 
+ .tamaño-tarjeta-dentro{
+    width: 63%;
+     min-height:100vh !important;
+ height: 100vh !important;
+ background-color:transparent;
+ display: flex;
+                 align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+                 justify-content: center;
+     
+ }
+ .centrar-contenido{
+    width: 70%;
+     
+     position: relative;
+     
+     min-height:50vh !important;
+ height: 50vh !important;
+     
+     
+     
+ }
+ 
+ .boton_slider1{
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
+    display:block;
+    text-align: start;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+
+ }
+ .boton_slider_interior{
+    
+    font-weight: bold;
+    color: rgb(52, 50, 107);
+    background-color: rgb(244, 180, 20);
+    padding: 15px;
+    border-radius: 8px;
+ }
+ .btn-primary{
+     background-color: rgb(55, 95, 170);
+     font-size: 20px;
+     
+ }
+ .btn-sli{
+     font-size: 18px;
+     padding: 7px;
+     padding-left: 12px;
+     padding-right: 12px;
+     border-radius: 10px;
+ }
+ .btn-sli:hover{
+
+     background-color: transparent;
+     text-decoration: none;
+ }
+ .h5-slider-new{
+    font-size: 4.5em;
+    background-color: transparent;
+    font-family: 'Noto Sans JP', sans-serif;
+     font-weight: 800;
+     text-align: start;
+     line-height: 1;
+     color: white;
+ }
+ .p-slider-new{
+    text-shadow:
+    -0.2px -0.2px 0 #000,  
+    0.2px -0.2px 0 #000,
+    -0.2px 0.2px 0 #000,
+    0.2px 0.2px 0 #000;
+    
+    font-size: 1.1em;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: start;
+    line-height: 1.6;
+    
+     color: rgb(224, 215, 215);
+ }
+ .centrar-contenido-footer{
+     position: absolute;
+     left: 50%;
+     top: 95%;
+     transform: translate(-50%, -50%);
+     -webkit-transform: translate(-50%, -50%);
+ }
+  .h1-slider{
+     
+     color: white;
+     font-size: 27px;
+ }
+ .p-slider{
+     
+     color: white;
+     font-size: 18px;
+ }
+ .izquierdo-slider{
+     background-color: transparent;
+     width: 30px;
+     margin-left: 10px;
+     margin-right: 10px;
+ 
+ }
+ .izquierdo-slider2{
+     background-color: rgba(32,31,31,0.3);
+     height: 120px;
+     width: 32px;
+     
+ 
+ }
+ .izquierdo-slider2:hover{
+     background-color: rgba(32,31,31,0.6);
+     
+ 
+ }
+ @media screen and (max-width: 1000px) {
+         .slider-fondoentero1
+         {
+             margin-left: -30%;
+             width: 170%;
+             height: 100vh !important;
+             
+         }
+         .centrar-movil{
+             background-color: transparent;
+             width: 85%;
+ 
+         }
+         .centrar-contenido{
+             top:46%;
+         }
+         .img-logo-slider13{
+             width: 150px;
+         }
+         .h5-slider-new{
+             font-size: 23px;
+         }
+         .hr{
+             width: 120px;
+         }
+         .p-slider-new{
+             font-size: 15px;
+         }
+         .btn-sli{
+             font-size:14px;
+         }
+         .centrar-contenido-footer{
+             top:92%;
+         }	
+         .h1-slider{
+         
+         color: white;
+         font-size: 14px;
+         }
+         .p-slider{
+             
+             color: white;
+             font-size: 15px;
+         }			  
+ }
+ /********************************************************************************************************************************************************************/
+ /********************************************                                 3.- FIN-SLIDER-                                    *******************************/
+ /********************************************************************************************************************************************************************/
+ 
+ 
+
+ .Logro_General{
+    background-color: transparent;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+ }
+ .Logro_interior{
+    background-color: rgb(255, 191, 0);
+    width: 80%;
+    height: 200px;
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+ }
+ .footer_general{
+    background-color: rgb(28, 29, 66);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.footer_contenedor{
+    background-color:transparent;
+    width: 95%;
+    height: 400px;
+    display: flex;
+    gap: 5px;
+}
+.int_footer{
+
+    width: 20%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgb(111, 111, 111);
+}
+.logo_footer{
+    width: 100%;
+    overflow: hidden;
+    background-color: transparent;
+}
+.logo_footer>img{
+    width: 100%;
+    
+}
+.contenedor_menu_footer{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.present_footer{
+    background-color: rgb(198, 160, 10);
+    
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+.contenedor_contact_footer{
+    width: 90%;
+    height: 100%;
+    background-color: transparent;
+}
+.nav-text2{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #1717b6;
+}
+.contacto_footer{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactanos{
+    font-weight: bold;
+    background-color: transparent;
+    color: #ffffff;
+}
+ .interior_logro{
+
+    background-color: transparent;
+    height: 100%;
+    width: 25%;
+    
+    
+ }
+ .Icono_Logros{
+    background-color: transparent;
+    width: 100%;
+    height: 38%;
+ }
+ .Contenido_Logro{
+    background-color: #35274e2e;
+    width: 100%;
+    height: 61%;
+ }
+
+
+  /********************************************************************************************************************************************************************/
+ /********************************************                                 3.- Nosotros-                                    *******************************/
+ /********************************************************************************************************************************************************************/
+ .slider_nosotros{
+    background-color: #282145;
+    width: 100%;
+    min-height:100vh !important;
+ height: 100vh !important;
+ overflow: hidden;
+
+ }
+ .degradado_nosotros{
+    width: 100%;
+    min-height:100vh !important;
+height: 100vh !important;
+position: absolute;
+background: linear-gradient(to right, rgba(0, 0, 0, 0.692),rgba(0, 0, 0, 0.692),rgba(25, 24, 24, 0), rgba(0, 0, 0, 0)); /* Ajusta los valores de color y opacidad según tus necesidades */
+           border: none;
+z-index: 9;
+display: flex;
+
+
+
+
+}
+ .contenedor_texto_nosotros{
+    width: 50%;
+     min-height:100vh !important;
+ height: 100vh !important;
+ background-color:transparent;
+ display: flex;
+                 align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+                 justify-content: center;
+     
+ }
+ .texto_centrado{
+    width: 70%;
+     
+     position: relative;
+     background-color:transparent;
+     min-height:50vh !important;
+ height: 50vh !important;
+     
+     
+     
+ }
+ .titulo_slider_nosotros{
+    font-size: 4.5em;
+    background-color: transparent;
+    font-family: 'Noto Sans JP', sans-serif;
+     font-weight: 800;
+     text-align: start;
+     line-height: 1;
+     color: white;
+ }
+ .texto_slider_nosotros{
+    text-shadow:
+    -0.2px -0.2px 0 #000,  
+    0.2px -0.2px 0 #000,
+    -0.2px 0.2px 0 #000,
+    0.2px 0.2px 0 #000;
+    
+    font-size: 1.1em;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: start;
+    line-height: 1.6;
+    
+     color: rgb(224, 215, 215);
+ }
+ .boton_nosotros{
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
+    display:block;
+    text-align: start;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+
+ }
+ .boton_interior_nosotros{
+    
+    font-weight: bold;
+    color: rgb(52, 50, 107);
+    background-color: rgb(244, 180, 20);
+    padding: 15px;
+    border-radius: 8px;
+ }
+
+
+
+
+
+
+.sub_titulo{
+    width: 100%;
+    height: 200px;
+    background-color: #35274e;
+}
+
+
+
+
+
+
+
+
+
+ .contenedor_fundacion{
+    background-color: transparent;
+    min-height:60vh !important;
+    height: 60vh !important;
+    
+ }
+
+
+
+
+
+
+
+/********************************************************************************************************************************************************************/
+/********************************************                                 3.- Nosotros-                                    *******************************/
+/********************************************************************************************************************************************************************/
+ 
+ .degradado_fundacion{
+    width: 100%;
+    min-height:60vh !important;
+    height: 60vh !important;
+
+ /* Ajusta los valores de color y opacidad según tus necesidades */
+           border: none;
+
+display: flex;
+background-color: transparent;
+display: flex;
+justify-content: center;
+
+
+
+}
+ .contenedor_imagen{
+    overflow: hidden;
+    width: 40%;
+     
+ background-color:transparent;
+ display: flex;
+                 align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+                 justify-content: center;
+     
+ }
+ .centrado_fundacion{
+    width: 80%;
+     
+     overflow: hidden;
+     background-color:transparent;
+     min-height:50vh !important;
+ height: 50vh !important;
+     
+     
+     
+ }
+ .imagen_fundacion{
+    width: 100%;
+ }
+ .historia_iconos{
+    width: 40%;
+    
+    background-color: transparent;
+    
+ display: flex;
+ justify-content: center;
+         
+        
+        
+         align-items: center;
+ }
+ .contenedor_historia{
+    width: 90%;
+    min-height:40vh !important;
+ height: 40vh !important;
+ background-color: #ffffff;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ flex-wrap: wrap;
+ gap: 50px;
+ }
+ .icon_cont{
+    width: 25%;
+    height: 47%;
+    background-color: transparent;
+    border-right: 1px solid rgb(181, 181, 181)
+    
+ }
+ .icono__{
+    width: 100%;
+    height: 39%;
+    background-color: transparent;
+    display: flex;
+    gap: 25px;
+    font-size: 18px;
+    
+    align-items: center;
+ }
+ .icono__de{
+    width: 35px;
+    
+ }
+ .texto___{
+    font-size: 16PX;
+    width: 80%;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+ }
+ .fecha__{
+    color: #281192;
+    font-weight: 700;
+ }
+
+
+
+
+
+
+
+ .vision_mision__{
+    width: 100%;
+    height: 500px;
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .contenedor__vi{
+    width: 80%;
+    height: 400px;
+    background-color:transparent;
+    display: flex;
+    gap: 50px;
+
+ }
+
+ .cuadros__cont{
+    width: 30%;
+    height: 100%;
+    background-color: rgba(93, 92, 91, 0.149);
+    border-radius: 25px;
+    overflow: hidden;
+    
+ }
+ .titulo_cuadros{
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: #122fc1;
+ }
+ .contenido_cuadross{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 255, 170, 0);
+    display: flex;
+    justify-content: center;
+ }
+ .contenido_cuadross>div{
+    width: 80%;
+    height: 300px;
+    background-color:transparent;
+    justify-content: center;
+ }
+
+
+
+
+
+
+ .Peru_ubicacion{
+    width: 100%;
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+
+
+ }
+.contenedor_peru{
+    width: 80%;
+    background-color: transparent;
+    display: flex;
+}
+.informacion{
+    width: 40%;
+    height: 100%;
+    background-color: #8f8f9000;
+    
+}
+
+ /********************************************************************************************************************************************************************/
+/********************************************                                 3.- Mapa-                                    *******************************/
+/********************************************************************************************************************************************************************/
+ 
+/* Define los colores iniciales para cada 'path' */
+
+    /* Cambia el color al pasar el mouse */
+    #PE-AMA:hover {
+        fill: #2f2f6d; /* azul */
+    }
+
+    #PE-ANC:hover {
+        fill: #2f2f6d; /* verde */
+    }
+    #PE-APU:hover {
+        fill: #2f2f6d; /* azul */
+    }
+
+    #PE-ARE:hover {
+        fill: #2f2f6d; /* verde */
+    }
+    #PE-AYA:hover {
+        fill: #2f2f6d; /* azul */
+    }
+
+    #PE-CAJ:hover {
+        fill: #2f2f6d; /* verde */
+    }
+    #PE-CAL:hover {
+        fill: #2f2f6d; /* azul */
+    }
+
+    #PE-CUS:hover {
+        fill: #2f2f6d; /* verde */
+    }
+    #PE-HUC:hover {
+        fill: #2f2f6d; /* azul */
+    }
+
+    #PE-HUV:hover {
+        fill: #2f2f6d; /* verde */
+    }
+    #PE-ICA:hover {
+        fill: #2f2f6d; /* azul */
+    }
+
+    #PE-JUN:hover {
+        fill: #2f2f6d; /* verde */
+    }
+    #PE-LAL:hover {
+        fill: #2f2f6d; /* azul */
+    }
+
+    #PE-LAM:hover {
+        fill: #2f2f6d; /* verde */
+    }
+    #PE-LOR:hover {
+        fill: #2f2f6d; /* azul */
+    }
+
+    #PE-MDD:hover {
+        fill: #2f2f6d; /* verde */
+    }
+    #PE-MOQ:hover {
+        fill: #2f2f6d; /* azul */
+    }
+
+    #PE-PAS:hover {
+        fill: #2f2f6d; /* verde */
+    }
+    #PE-PIU:hover {
+        fill: #2f2f6d; /* azul */
+    }
+
+    #PE-PUN:hover {
+        fill: #2f2f6d; /* verde */
+    }
+    #PE-SAM:hover {
+        fill: #2f2f6d; /* verde */
+    }
+    #PE-TAC:hover {
+        fill: #2f2f6d; /* azul */
+    }
+
+    #PE-TUM:hover {
+        fill: #2f2f6d; /* verde */
+    }
+    #PE-UCA:hover {
+        fill: #2f2f6d; /* azul */
+    }
+
+    #PE-LKT:hover {
+        fill: #2f2f6d; /* verde */
+    }
+    
+
+
+/********************************************************************************************************************************************************************/
+/********************************************                                 3.- Fin Mapa-                                    *******************************/
+/********************************************************************************************************************************************************************/
+ .filtro{
+    width: 100%;
+    height: 500px;
+    background-color: transparent;
+ }
+ .contacto_ancho{
+    background-color: #0000001d;
+    width: 60%;
+    padding: 50px;
+ }
+ .Contenedor_general_contacto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ }
+
+
+.categoria{
+    margin: auto;
+    width: auto;
+    background-color: transparent;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid rgb(171, 171, 171);
+}
+.contenedor_general{
+    background-color: rgb(43, 35, 104);
+    padding: 12px;
+    display: flex;
+    width: auto;
+    gap: 15px;
+    align-items: center;
+    border-radius: 18px;
+}
+.contenedor_form{
+    background-color: #d1d1d14d;
+    border-radius: 10px;
+    border:1px solid rgb(101, 101, 101);
+    padding: 10px;
+}
+.contenedor_tabla{
+    background-color: rgba(133, 133, 133, 0.288);
+    padding: 15px;
+    border-radius: 10px;
+    
+    
+}
+
+.table-bordered{
+    border: 1PX solid rgb(142, 142, 142);
+}
+.boton_categoria{
+    background-color: orange;
+    padding: 12px;
+    border: none;
+    border-radius: 15px;
+}
+.imagen_maquinas{
+    width: 200px;
+}
+td{
+    vertical-align: middle;
+}
+.h2{
+    color: white;
+}
+.subti {
+    color: white;
+}
+.p_list{
+    color: rgb(41, 240, 57);
+}
+.inline{
+    display:inline-block;
+}
+
+.filtro_general{
+    width: 100%;
+    height: 500px;
+    background-color: #2f2f6d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.filtro{
+    width: 100%;
+    height: 150px;
+    background-color: #35274e;
+    
+
+
+}
+.general_filtro{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    
+    
+}
+
+.contenedor_imagenes{
+    width: 310px;
+    padding: 5px;
+    height: 490px;
+    background-color: transparent;
+    color: black;
+    border: 2px solid rgb(106, 105, 105);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.contenedor_gen{
+    width: 70%;
+    background-color: transparent;
+    display: flex;
+    padding-left: 10px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.imagen_maquina{
+    background-color: transparent;
+}
+
+.categoria_modelo{
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    border-top: 2px solid rgb(106, 106, 106);
+}
+.mini_datalles{
+    background-color: transparent;
+    padding-top: 10px;
+}
+.imagen_maquina_filtro{
+    width: 300px;
+    height: 270px;
+    
+}
+
+.marca-minidetalle{
+
+}
+
+.maquina-minidetalle{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 0.9;
+    background-color: transparent;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+
+.lists{
+    list-style: none; /* Quitamos los marcadores */
+padding: 0; /* Quitamos el padding por defecto de la lista */
+margin-left: 9px; /* Separamos la lista de la izquierda */
+line-height: 1.2;
+
+
+}
+.lists::before {
+    content: "\2022"; /* Insertamos el marcador */
+padding-right: 5px; /* Establecemos el espacio entre las viñetas y el list item */
+color: red; /* Coloreamos la viñeta */
+
+}
+
+.marca-minidetalle{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.Boton_general_maquinas_filtro{
+    background-color: transparent;
+    padding: 10px;
+}
+
+.detealles_butt{
+    background-color: rgb(225, 170, 68);
+}
+.texto_cat_mod{
+    line-height: 0.5;
+}
+.marca_pequeño{
+    font-size: 20px;
+}
+.nombre_mod{
+    
+}
+
+
+.Tarjeta_Presenta{
+    width: 100%;
+    min-height:50vh !important;
+ height: 50vh !important;
+    background-color: rgb(87, 87, 85);
+    overflow: hidden;
+}
+.aside_filter{
+    padding: 10px;
+    background-color: rgb(31, 34, 78);
+    width: 350px;
+    height: 800px;
+}
+
+.slider_nosotros_alquiler{
+    background-color: #282145;
+    width: 100%;
+    min-height:100vh !important;
+ height: 100vh !important;
+ overflow: hidden;
+}
+
+.degradado_alquiler{
+    width: 100%;
+    min-height:50vh !important;
+height: 50vh !important;
+position: absolute;
+background: linear-gradient(to right, rgba(0, 0, 0, 0.69),rgba(0, 0, 0, 0.692),rgba(25, 24, 24, 0), rgba(0, 0, 0, 0)); /* Ajusta los valores de color y opacidad según tus necesidades */
+           border: none;
+z-index: 9;
+display: flex;
+
+
+
+
+}
+.contenedor_texto_alquiler{
+    width: 50%;
+     min-height:50vh !important;
+ height: 50vh !important;
+ background-color:transparent;
+ display: flex;
+                 align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+                 justify-content: center;
+     
+ }
+
+ .texto_centrado_alquiler{
+    width: 70%;
+     
+     position: relative;
+     background-color:transparent;
+     
+     
+     
+     
+ }
+ .slider-fondoentero_alquiler{
+    
+    background-color: transparent;
+    margin-top: -4%;
+     width: 100%;
+     min-height:80vh !important;
+    height: 80vh !important;
+ 
+ }
+ .titulo_slider_alquiler{
+    font-size: 3.5em;
+    background-color: transparent;
+    font-family: 'Noto Sans JP', sans-serif;
+     font-weight: 800;
+     text-align: start;
+     line-height: 1;
+     color: white;
+ }
+
+ .cargador{
+    z-index: 99999;
+ }
+
+.general_modal{
+    
+    padding-top: 70px;
+    
+    
+}
+
+.custom-width {
+    max-width: 60%; /* O cualquier ancho personalizado que desees */
+}
+.modal-content{
+    
+}
+.x_boton{
+    background-color: transparent;
+}
+.contenedor_detalles__{
+    background-color: transparent;
+    display: flex;
+}
+.modal-footer{
+    background-color: transparent;
+}
+.mismo_detal{
+    width: 50%;
+}
+.titulo_imagen_maqui{
+    background-color: transparent;
+}
+.detalles_maq_fija{
+    background-color: transparent;
+    height: 350px;
+}
